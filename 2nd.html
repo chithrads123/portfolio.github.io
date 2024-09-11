@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color:antiquewhite;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    display: none;
+}
+input:hover+p{
+    display: inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(198, 30, 210);
+}
+input{ 
+    background-color:khaki;
+    border: blue;
+}
+input:hover{
+    background-color:darkgoldenrod;
+}
+input:required{
+    border:solid green;
+}
+input:read-only{
+    border: solid green;
+}
+form{
+    border: dashed;
+}
+input[type="radio"]:checked{
+    height: 30px;
+    width: 30px;
+}
+input[type="radio"]:checked+span{
+    color: aquamarine;
+    font-weight: 500;
+}
+input:focus{
+    background-color:chocolate ;
+}
+img{
+    display: none;
+}
+input[type="email"] :focus:valid~img#valid{
+    display: inline;
+}
+input[type="email"]:focus:invalid~img#invalid{
+display: inline;
+}
+input:disabled{
+    border: dotted cornsilk;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>COURSE REGISTRATION FORM</h1>
+<fieldset>
+    <legend>PERSONEL DETAILS</legend>
+    <form action="/form projectz/responce2.html">
+    <table>
+<tr>
+    <td>
+        <label for="">First Name </label>
+    </td>
+    <td><input type="text" placeholder="ex:-chandhana">  <p>enter the name</p></td>
+   <br>
+</tr>
+<tr>
+    <td>
+        <label for="">Surname</label>
+    </td>
+    <td>
+        <input type="text" placeholder="ex:-ds"> <p>enter the surname</p><br>
+       
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="">Mobile number</label>
+    </td>
+    <td>
+        <input type="text" placeholder="ex:-3254532454" maxlength="10"> <p>enter the phone number</p><br>
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="">email</label>
+    </td>
+    <td><input type="email" placeholder="gdhbj@gmail.com">
+    <p>enter the email</p></td><br>
+</tr>
+<tr>
+    <td>
+        <label for="">Password</label>
+    </td>
+    <td>
+        <input type="password" maxlength="10"><p>enter a strong password</p><br>
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="">confirm password</label>
+    </td>
+    <td>
+        <input type="password" maxlength="10"><br>
+    </td>
+</tr>
+<tr>
+    <td><label for="">DOB</label></td>
+    <td>
+        <input type="date">
+        <p>select the dob</p>
+    </td>
+</tr>
+<tr>
+    <td><label for="">Gender</label></td>
+    <td><input type="radio" name="Gender" value="Male"><span>Male</span>
+        <input type="radio" name="Gender" value="Female"><span>Female</span>
+        <input type="radio" name="Gender" value="Custom"><span>Custom</span>
+        <p>select gender</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="">Select Country</label>
+    </td>
+    <td>
+       <select name="" id=""><option value="">india</option>
+    <option value="">paris</option>
+    <option value="">london</option>
+<option value="">uganda</option></select>
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="submit">
+        <p>click here</p>
+
+    </td>
+</tr>
+</table>
+</form>
+</fieldset>
+<fieldset>
+    <legend>
+        Course Details
+    </legend>
+    <table>
+<form action="">
+<tr>
+    <td>
+        <select name=""id=""><option value="">java
+            <option value="paris">python</option>
+            <option value="">c++</option>
+        </option></select>
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="">Delivery mode</label>
+    </td>
+    <td>
+        <input type="checkbox" name="Delivery mode" value="Online"><span>Online</span>
+        <input type="checkbox" name="Deliver mode" value="Offline"><span>Offline</span>
+    </td>
+</tr>
+<tr>
+    <td>
+        <footer><textarea name="co" id=""></textarea></footer>
+    </td>
+</tr>
+
+</form>
+</table>
+</fieldset>
+
+
+</body>
+</html>
